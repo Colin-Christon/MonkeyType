@@ -1,0 +1,49 @@
+/* src/components/Footer.css */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2c3e50; /* Dark background color */
+    padding: 15px 30px;
+    color: #ecf0f1; /* Light text color */
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for separation */
+  }
+  
+  .footer-left,
+  .footer-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .footer-left a {
+    color: #ecf0f1;
+    margin-right: 15px;
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease;
+  }
+  
+  .footer-left a:hover {
+    color: #f39c12; /* Change icon color on hover */
+  }
+  
+  .theme-name {
+    margin-right: 15px;
+  }
+  
+  .version-number {
+    font-weight: bold;
+  }
+  
+  /* Media Query for Responsiveness */
+  @media (max-width: 768px) {
+    .footer {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-left {
+      margin-bottom: 10px;
+    }
+  }
+  
