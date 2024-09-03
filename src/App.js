@@ -10,7 +10,7 @@ import Hero from './components/Hero';
 
 function App() {
   return (
-    <>
+    <div className='app'>
     <Router>
         <Navbar/>
         <Routes>
@@ -20,7 +20,7 @@ function App() {
         <Hero/>
         <Footer/>
     </Router>
-    </>
+    </div>
   );
 }
 

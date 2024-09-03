@@ -5,17 +5,11 @@ export default class Commands extends Component {
   render() {
     return (
       <div className="commands">
-          <div className="commands-container">
-            <div className="commands-header">
-              <span className="off">Off</span>
-              <span className="restart">Restart</span>
-            </div>
-            <div className="commands-list">
-              <p>esc</p>
-              <p>ctrl+shift+p</p>
-              <p>new test</p>
-            </div>
-        </div>
+          <p><span className='cmdText'> OFF</span> - restart test</p>
+          <p>
+              <span className='cmdText'> ESC</span>&nbsp;or&nbsp;
+              <span className='cmdText'>Ctrl + C</span> - exit test
+          </p>
       </div>
     );
   }

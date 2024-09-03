@@ -1,5 +1,6 @@
 import React from 'react';
 import '../style/TextAreaWithRestart.css';
+import restart from "../assets/restart.png"
 
 const TextAreaWithRestart = () => {
   const handleRestart = () => {
@@ -9,15 +10,18 @@ const TextAreaWithRestart = () => {
 
   return (
     <div className="text-area-container">
-      <div className="text-display">
-        {/* This is where the text to type will be displayed */}
-        <p className="typing-text">
-          The quick brown fox jumps over the lazy dog. {/* Replace with dynamic text */}
-        </p>
-      </div>
+      <p className="typing-text">
+          The quick brown fox jumps over the lazy dog. The dog was too smart 
+          and her name was viola, after than she was trveling  {/* Replace with dynamic text */}
+        .
+      </p>
       <button className="restart-button" onClick={handleRestart}>
-        Restart
+       <img src={restart} alt='restart' className='restart'/>
       </button>
+
+      <div className='restart-alt'>
+        Restart Test
+      </div>
     </div>
   );
 };

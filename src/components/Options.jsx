@@ -1,13 +1,18 @@
 // src/components/OptionsBox.jsx
 import React from 'react';
-import '../style/Options.css'; // CSS for styling
+import '../style/Options.css';
+import time from "../assets/clock.png" 
+import a from "../assets/a.png"
+import zen from "../assets/zen.png"
+import quote from "../assets/quote.png"
+import tools from "../assets/tools.png"
 
 const Options = () => {
   return (
     <div className="options-box">
       {/* First Part */}
       <div className="options-section">
-        <div className="option-item">@punctuation</div>
+        <div className="option-item">@ punctuation</div>
         <div className="option-item"># numbers</div>
       </div>
 
@@ -17,17 +22,18 @@ const Options = () => {
       {/* Second Part */}
       <div className="options-section">
         <div className="option-item">
-          <i className="clock-icon"></i> Time
-        </div>
-        <div className="option-item">A words</div>
-        <div className="option-item">
-          <i className="quote-icon"></i> Quote
+          <img src={time} className="option-icons" alt='time'></img> Time
         </div>
         <div className="option-item">
-          <i className="zen-icon"></i> Zen
+          <img src={a} className="option-icons" alt='A'></img> words</div>
+        <div className="option-item">
+          <img src={quote} className="option-icons" alt='quote'></img> Quote
         </div>
         <div className="option-item">
-          <i className="custom-icon"></i> Custom
+          <img src={zen} className="option-icons" alt='zen'></img> Zen
+        </div>
+        <div className="option-item">
+          <img src={tools} className="option-icons" alt='tools'></img> Custom
         </div>
       </div>
 
