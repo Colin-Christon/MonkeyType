@@ -1,0 +1,21 @@
+
+
+.commands { 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center horizontally */ /* Center vertically */
+  height: 10vh;
+  margin-bottom: 20px;
+  color:#dae1e8;
+  font-family: Roboto Mono,Roboto Mono,Vazirmatn , monospace; /* Full viewport height */
+}
+
+.cmdText{
+  border-radius: 5px;
+  padding: 4px;
+  background-color: rgb(109, 103, 103);
+}
+
+
+  
